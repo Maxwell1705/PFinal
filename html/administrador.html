@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+
+    <header id="encabezado">
+        <h1>BeatleMania</h1>
+    </header>
+
+    <div id="nav-bg">
+        <nav class="navegacion contenedor-nav" style="justify-content: space-between;">
+            <a href="#">Administrador</a>
+            <a id="btnCerrarSesion" style="cursor: pointer;">Cerrar Sesión</a>
+        </nav>
+    </div>
+
+    <section id="hero">
+        <div id="contenido-hero">
+            <h2>BeatleMania</h2>
+            <p style="font-size: 1.2em;">Villa Uniòn, Mazatlan, Sinaloa</p>
+        </div>
+
+    </section>
+    
+    <section id="contenido-administrador">
+        <h3>Administrador</h3>
+
+        <form action="" id="formulario-administrador">
+            <fieldset>
+                <div class="campoAdmin">
+                    <label>Código:</label>
+                    <br>
+                    <input type="text" placeholder="Código" id="codigo">
+                </div>
+
+                <div class="campoAdmin">
+                    <label>Precio:</label>
+                    <br>
+                    <input type="number" placeholder="Introduzca un precio" id="precio">
+                </div>
+
+                <div class="campoAdmin">
+                    <label>Producto:</label>
+                    <br>
+                    <input type="text" placeholder="Introduzca el nombre del producto" id="nombre">
+                </div>
+
+                <div class="campoAdmin">
+                    <label>Descripcion:</label>
+                    <br>
+                    <textarea class="input-text" id="descripcion"></textarea>
+                </div>
+
+                <div class="campoAdmin">
+                    <label>URL:</label>
+                    <br>
+                    <input type="text" id="url" readonly>
+                </div>
+
+                <div class="campoAdmin" style="margin: 1em 0;">
+                    <label>Estado:</label>
+                        <select name="" id="estatus" class="form-select">
+                        <option value="" selected>Selecciona una opción</option>
+                        <option value="0">Activo</option>
+                        <option value="1">Inactivo</option>
+                    </select>
+                </div>
+
+                <div class="campoAdmin">
+                    <div class="imagenPreview" id="imagenContainer">
+                        <img id="imgPreview" src="#" height="200" class="none" alt="Imagen introducida" />
+                    </div>
+                    <label>Imagen:</label>
+                    <div class="input-image">
+                        <label for="imagen" class="input-file">
+                            <input type="file" class="none" name="imagen" id="imagen" accept="image/*" />
+                            Seleccione un archivo
+                        </label>
+                    </div>
+        
+                </div>
+
+            </fieldset>
+
+            <div id="botones">
+                <button id="btnAgregar">Añadir</button>
+                <button id="btnConsultar">Buscar</button>
+                <button id="btnActualizar">Actualizar</button>
+                <button id="btnDeshabilitar">Deshabilitar</button>
+                <button id="btnMostrar">Mostrar Todo</button>
+                <button type="reset" id="btnLimpiar">Limpiar</button>
+            </div>
+
+        </form>
+
+        <center>
+        <table id="productos" class="table" border="1">
+
+        </table>
+        </center>
+
+    </section>
+
+    <footer id="pie">
+        <p>© 2022, Todos los derechos Reservados. Maximiliano Contreras</p>
+    </footer>
+
+    <script src="/js/app.js" type="module"></script>
+    <script src="/js/login.js" type="module"></script>
+
+</body>
+</html>
