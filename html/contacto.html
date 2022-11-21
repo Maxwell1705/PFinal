@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/CSS/estilos.css">
+</head>
+<body>
+    <header id="encabezado">
+        <h1>BeatleMania</h1>
+    </header>
+
+    <div id="nav-bg">
+        <nav class="navegacion contenedor-nav">
+            <a href="/html/inicio.html">Inicio</a>
+            <a href="/html/empresa.html">Empresa</a>
+            <a href="/html/productos.html">Productos</a>
+            <a href="/html/contacto.html">Contacto</a>
+        </nav>
+    </div>
+    
+    <section id="hero">
+        <div id="contenido-hero">
+            <h2>BeatleMania</h2>
+            <p style="font-size: 1.2em;">Villa Uniòn, Mazatlan, Sinaloa</p>
+        </div>
+
+    </section>
+
+    <section id="contenedor-formulario">
+        <h3></h3>
+        
+        <form id="formulario">
+            <fieldset>
+                <legend>Contactanos</legend>
+                
+                <div id="contenedor-campos">
+                    <div class="campo">
+                        <label>Nombre</label>
+                        <input class="input-text" type="text" placeholder="Nombre">
+                    </div>
+                    <div class="campo">
+                        <label>Correo</label>
+                        <br>
+                        <input class="input-text" type="email" placeholder="Email">
+                    </div>
+                    <div class="campo">
+                        <label>Celular</label>
+                        <br>
+                        <input class="input-text" type="tel" placeholder="Celular">
+                    </div>
+                    <div class="campo">
+                        <label>Direccion</label>
+                        <br>
+                        <input class="input-text" type="tel" placeholder="Direccion">
+                    </div>
+                    <div class="campo">
+                        <label>Sexo</label>
+                        <br>
+                        <label style="font-size: 1em;" for="Masculino">Masculino</label>
+                        <input type="radio" id="masculino" name="sexo">
+                        <label style="font-size: 1em; margin-left: 1em;" for="Femenino">Femenino</label>
+                        <input type="radio" id="Femenino" name="sexo">
+                    </div>
+                    <div class="campo">
+                        <label>Comentarios</label>
+                        <br>
+                        <textarea class="input-text"></textarea>
+                    </div>
+                </div>
+                    
+                <div id="contenedor-botones">
+                        <input class="boton" type="reset" value="Limpiar">
+                        <input class="boton" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer id="pie">
+        <p>© 2022, Todos los derechos Reservados. Maximiliano Contreras</p>
+    </footer>
+
+</body>
+</html>

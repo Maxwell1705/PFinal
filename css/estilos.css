@@ -1,0 +1,714 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input[type=number]::-webkit-outer-spin-button,
+
+input[type=number]::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+
+    margin: 0;
+
+}
+
+h1 {
+    margin: .6em 0;
+    text-align: center;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.8em;
+}
+
+h3 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#encabezado {
+    padding: .1em;
+    background-color: slategrey;
+}
+
+#nav-bg {
+    background-color: rgb(100, 100, 100);
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navegacion a {
+    padding: .5em;
+    text-decoration: none;
+    color: white;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.navegacion a:hover {
+    background-color: rgb(255, 255, 254);
+    color: black;
+}
+
+.contenedor-nav {
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+#hero {
+    background-image: url(/img/Portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40em;
+}
+
+#contenido-hero {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5em 0;
+}
+
+#contenido {
+    max-width: 70em;
+    margin: 3em auto 3em auto;
+    background-color: rgb(176, 177, 177);
+    padding-bottom: 3em;
+}
+
+#contenido h3 {
+    padding-top: .4em;
+}
+
+#contenido-ofertas {
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    #contenido-ofertas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1em;
+        
+    }
+}
+
+.ofertas {
+    margin: 2em 0 1em 0;
+    text-align: center;
+    
+}
+
+.ofertas picture {
+    display: flex;
+    justify-content: center;
+    margin-bottom: .8em;
+    margin-top: 1em;
+}
+
+.imagenes-ofertas {
+    width: 350px;
+    height: 350px;
+}
+
+.ofertas p {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.ofertas span {
+    color: rgb(255, 0, 0);
+}
+
+.ofertas a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgb(58, 60, 58);
+    padding: .8em;
+}
+
+.ofertas a:hover{
+    background-color: rgb(202, 202, 200);
+    color: black;
+}
+
+#pie {
+    background-color: rgb(100, 100, 100);
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: .8em 0 0 0;
+    color: white;
+    padding: 1em;
+}
+
+
+#nosotros h3{
+    margin: 1em 0;
+}
+
+#nosotros img {
+    width: 14em;
+    height: 12em;
+    border: 1px solid;
+}
+
+#contenido-nosotros {
+    margin: 0 4em;
+    display: block;
+    text-align: center;
+}
+
+#contenido-nosotros img {
+    margin: 0 auto 6em auto;
+}
+
+#contenido-nosotros p {
+    text-align:justify ;
+}
+
+@media (min-width: 768px) {
+    #contenido-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 1.2em;
+    }
+
+    #nosotros img {
+        width: 500px;
+        height: 480px;
+        border: 1px solid;
+    }
+
+}
+
+#productos {
+    margin: 2em 0 6em 0;
+}
+
+#contenido-productos {
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    #contenido-productos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2em;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1140px) {
+    #contenido-productos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2em;
+        text-align: center;
+    }
+}
+
+.producto {
+    margin-bottom: 2em;
+}
+
+.producto a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: rgb(92, 92, 92);
+    padding: .8em;
+}
+
+.producto a:hover {
+    background-color: rgb(201, 201, 201);
+    color: black;
+}
+
+.producto p {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.producto img {
+    margin-top: 4em;
+    width: 320px;
+    height: 320px;
+}
+
+.producto span {
+    color: rgb(255, 0, 0);
+}
+
+#contenedor-formulario h3{
+    margin: 1em 0;
+}
+
+#formulario fieldset {
+    border: none;
+}
+
+#formulario {
+    background-color: rgb(84, 84, 84);
+    width: min( 40em, 100% );
+    margin: 1em auto;
+    border-radius: .8em;
+    box-shadow: 0px 5px 15px 0px rgba(65, 65, 65, 0.6);
+    margin-bottom: 5em;
+}
+
+#formulario legend {
+    padding-top: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#contenedor-campos {
+    margin: 1em 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-text {
+    height: 2em;
+    width: 100%;
+    border: none;
+    border-radius: .3em;
+    padding-left: .5em;
+}
+
+
+.campo {
+    margin: 1em 2em 0 2em;
+}
+
+.campo label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color:white;
+}
+
+.campo textarea{
+    width: 100%;
+    height: 10em;
+    resize: vertical;
+    border: none;
+    border-radius: .3em;    
+}
+
+#contenedor-botones {
+    text-align: end;
+    margin-right: 4em;
+}
+
+@media (max-width: 768px) {
+
+    .boton {
+        background-color: rgb(125, 127, 128);
+        text-decoration: none;
+        border: none;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: white;
+        padding: .8em;
+        border-radius: .2em;
+        margin: 1em 0 2em 2em;
+        width: 95%;
+    }
+
+}
+
+.boton {
+    background-color: rgb(169, 171, 173);
+    text-decoration: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    padding: .8em;
+    border-radius: .3em;
+    margin: 1em 0 2em 2em;
+}
+
+
+
+.boton:hover {
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+/*administrador*/
+
+#contenido-administrador h3 {
+    margin: 1em 0;
+}
+
+#formulario-administrador {
+    background-color: rgb(118, 121, 122);
+    width: min( 75em, 100% );
+    margin: 1em auto;
+    box-shadow: 0px 5px 15px 0px rgba(25, 25, 25, 0.6);
+    margin-bottom: 5em;
+    padding: 1em;
+    border-radius: .5em;
+}
+
+#formulario-administrador fieldset {
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2em;
+    margin-left: 3em;
+}
+
+@media (max-width: 768px) {
+    #formulario-administrador fieldset {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #nombre {
+        width: 88%;
+    }
+
+    #descripcion {
+        width: 88%;
+    }
+
+    #url {
+        width: 88%;
+    }
+}
+
+.campoAdmin input {
+    width: 94%;
+    border: 1px rgb(176, 29, 29) solid;
+    border-radius: .3em;
+    font-size: 1em;
+    padding-left: .5em;
+    height: 2em;
+    margin: .3em 0;
+}
+
+.campoAdmin textarea {
+    height: 6em;
+    margin: .3em 0;
+    resize: vertical;
+    border: none;
+    width: 94%;
+}
+
+.campoAdmin label {
+    font-weight: bold;
+}
+
+#codigo {
+    width: 88%;
+}
+
+#precio {
+    width: 88%;
+}
+
+.input-file {
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    border: 2px solid rgb(253, 0, 0);
+    background-color: rgb(221, 168, 168);
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+.input-image {
+    display: flex;
+    flex-direction: row;
+    margin-top: .5em;
+}
+
+.input-name {
+    padding: 0.6em 1.2em;
+    border-radius: 0em 0.5em 0.5em 0em;
+    border: 2px solid rgb(216, 138, 138);
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: default;
+}
+
+.input-file:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.imagenPreview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.none {
+    display: none;
+}
+
+.campoAdmin:nth-child(4) {
+    grid-column: 1 / 3;
+}
+
+.campoAdmin:nth-child(3) {
+    grid-column: 1 / 3;
+}
+
+.campoAdmin:nth-child(5) {
+    grid-column: 1 / 3;
+}
+
+.campoAdmin:nth-child(6) {
+    grid-column: 1 / 3;
+}
+
+#botones {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+@media (max-width: 768px) {
+    #botones {
+        flex-direction: column;
+        
+    }
+
+    #btnAgregar {
+        margin: 1em 0;
+    }
+
+    #btnConsultar {
+        margin: 1em 0;
+    }
+
+    #btnActualizar {
+        margin: 1em 0;
+    }
+
+    #btnDeshabilitar {
+        margin: 1em 0;
+    }
+
+    #btnMostrar {
+        margin: 1em 0;
+    }
+
+    #btnLimpiar {
+        margin: 1em 0;
+    }
+}
+
+#btnAgregar {
+    padding: 1em;
+    border: none;
+    background-color: rgb(151, 155, 158);
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    border-radius: .2em;
+}
+
+#btnConsultar {
+    padding: 1em;
+    border: none;
+    background-color: rgb(151, 155, 158);
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    border-radius: .2em;
+}
+
+#btnActualizar {
+    padding: 1em;
+    border: none;
+    background-color: rgb(151, 155, 158);
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    border-radius: .2em;
+}
+
+#btnDeshabilitar {
+    padding: 1em;
+    border: none;
+    background-color: rgb(151, 155, 158);
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    border-radius: .2em;
+}
+
+#btnMostrar {
+    padding: 1em;
+    border: none;
+    background-color: rgb(151, 155, 158);
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    border-radius: .2em;
+}
+
+#btnLimpiar {
+    padding: 1em;
+    border: none;
+    background-color: rgb(151, 155, 158);
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    border-radius: .2em;
+}
+
+#btnAgregar:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#btnConsultar:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#btnActualizar:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#btnDeshabilitar:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#btnMostrar:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+#btnLimpiar:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.imgModificar {
+    height: 200px;
+    width: 200px;
+}
+
+.table {
+    text-align: center;
+}
+/* Login */
+#contenido-login h3 {
+    margin: 1em 0;
+}
+
+#login {
+    background-color: rgb(172, 172, 172);
+    width: min(30em, 100%);
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: .8em;
+    margin-bottom: 10em;
+    margin-top: 5em;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.6);
+}
+
+#login fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.campoLogin label {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.campoLogin input {
+    border: 1px rgb(198, 146, 146) solid;
+    border-radius: .3em;
+    font-size: 1.2em;
+    padding-left: .3em;
+    height: 1.6em;
+    margin: .3em 0;
+    width: 98%;
+}
+
+#icono-login {
+    margin: 1em auto;
+}
+
+#email {
+    margin-bottom: 1.5em;
+}
+
+#contraseña {
+    margin-bottom: 2em;
+}
+
+#boton-IniciarSesion {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#btnIniciarSesion {
+    padding: 1em;
+    border: none;
+    background-color: rgb(114, 111, 111);
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    border-radius: .5em;
+}
+
+#btnIniciarSesion:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
